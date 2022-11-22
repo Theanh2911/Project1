@@ -1,5 +1,8 @@
 package src;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class Cart {
     public static final int MAX_NUMBER_ORDERED = 20;
     private DigitalVideoDisc itemOrdered[] = new DigitalVideoDisc[MAX_NUMBER_ORDERED];
@@ -23,6 +26,7 @@ public class Cart {
             System.out.println("Your cart is full");
         }
     }
+
 
     public void setQtyOrdered(int qtyOrdered){
         this.qtyOrdered = qtyOrdered;
