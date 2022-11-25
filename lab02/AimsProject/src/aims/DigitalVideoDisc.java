@@ -1,7 +1,10 @@
-package src;
+package src.aims;
 
 public class DigitalVideoDisc {
+    private int id;
     private String title;
+
+
 
     public String getTitle() {
         return title;
@@ -49,13 +52,25 @@ public class DigitalVideoDisc {
     private float cost;
 
     public DigitalVideoDisc(String title, String category, String director, int length, float cost) {
+        this.id = nbDigitalVideoDisc;
         this.title = title;
         this.category = category;
         this.director = director;
         this.length = length;
         this.cost = cost;
     }
-
+    public DigitalVideoDisc(String title){
+        this.id = nbDigitalVideoDisc;
+        this.title = title;
+    }
+    public DigitalVideoDisc(String title,String category, float cost){
+        this.id = nbDigitalVideoDisc;
+        this.title = title;
+        this.category = category;
+        this.cost = cost;
+    }
+    private static int nbDigitalVideoDisc =0;
+    public int getID() {
+        return id;
+    }
 }
-
-
